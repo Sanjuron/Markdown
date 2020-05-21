@@ -14,7 +14,7 @@ On insère un code source en l'**indentant** (une tab)
 
 *les trois lignes précédentes ont été indentées d'une tabulation **à chaque fois*** 
 
-En utilisant l'accent grave de la touche 7 `print("hello)`on peut insérer du code au sein du ligne. D'ailleurs, il chande de code dans l'éditeur. Ce qui n'est pas le cas des trois lignes indentées...
+En utilisant l'accent grave de la touche 7 `print("hello")`on peut insérer du code au sein du ligne. D'ailleurs, il change la couleur du code dans l'éditeur. Ce qui n'est pas le cas des trois lignes indentées...
 
 Créer des liens
 -----------
