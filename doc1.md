@@ -36,3 +36,14 @@ Un astérisque avant chaque ligne, pas d'astérisque à la fin des lignes.
 
 Fin de la première partie
 ------------------
+
+Addendum suite à l'échec de la liste à puce
+-----------------------------------------
+
++ Est ce qu'avec des signes + 
++ cela fonctionne ?
++ ...
+
+- Et avec des tirets 
+- ?
+- ...
