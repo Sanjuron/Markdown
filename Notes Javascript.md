@@ -1,5 +1,5 @@
-Notes Javascript
-===============
+Notes Javascript - Première partie : jusqu'aux boucles
+===============================================
 
 Inclure le `<script src = "js/app.js"></script>` à la toute fin du **body** pour que *la page exécute d'abord l'HTML et le CSS*.
 
@@ -25,7 +25,7 @@ Alert / Prompt / Confirm / Console log
 - `alert("hello");`  affiche une *fenêtre modale*
 - `prompt("Est-ce que ?", [default]);` pose une question à l'utilisateur et default permet d'entrer un texte dans le champ input (optionnel)
 - `confirm("Oui ou non");` proposer de confirmer une question. Renvoie `true` ou `false` si OK ou Cancel.
-
+- `console.log("message");` affiche un message dans la console.
 
 
 Divers
@@ -41,52 +41,121 @@ Toujours mettre `"use strict";` en début de code js.
 Quand js compare des valeurs de différents types, il les convertit en nombre.
 
 
+Opérateurs, comparaisons...
+------------------
+
+Liste des opérateurs:
+
+- l'addition +
+- la soustraction -
+- la multiplication *
+- la division /
+- le modulo % (c'est-à-dire le reste d'une division)
+- l'exponientation ** Ex : `2**3` renvoie `8`
+
+Le signe `+` appliqué à des chaînes de caractères permet leur **concaténation**.
+	let concat = "Julien" + "Sanjuron";
+
+Si l'un des opérandes est un *string* alors l'autre ou les autres opérandes seront converties en *string*. Il faut cependant prendre en compte la précédence des opérations. 
+	2 + 2 + "1" = 41
+Car les deux chiffres sont d'abord additionnés entre eux avant d'être convertis. 
+
+On peut assigner plusieurs variables à une même valeur en une seule ligne:
+	
+	let a, b, c;
+	a = b = c = 2;
+
+**Attention** `i++` n'est pas égal à `++i`.
+La forme préfixée retourne la nouvelle valeur que la forme suffixée retourne l'ancienne. 
+
+Liste des comparaisons:
+
+- <
+- <=
+- >
+- >=
+- ==
+- ===
+
 Les Structures conditionnelles
 ------------------------------
+
+La structure `if` évalue une *condition* entre parenthèses et si le résultat est *true* exécute un bloc de code. 
+
+	let name = "Julien";
+	if (name == Julien") {
+		alert("Tu t'appelles bien Julien");
+	}
+
+-> Il est possible de l'écrire plus rapidement:
+
+	if (name) {
+		alert("Tu t'appelles bien Julien");
+	}
+
+-> Car la condition est évaluée en `true` ou `false`.
+
+Une structure if peut se voir rajouter `else` ou `else if` afin d'exécuter un autre bloc de code si la ou les conditions initiales ne sont pas remplies.
+
+Il est aussi possible d'opter pour une *structure ternaire* 
+
+	let result = condition ? value1 : value 2;
+
+Explications : une condition est posée. Le signe `?` l'évalue. Si le résultat est `true` alors `value1` est exécutée. Sinon (*else*) `value2`l'est.
+
+Les opérateurs logiques:
+
+- || (OR) : s'il l'une des conditions est `true` alors `true` est retourné.
+- && (AND) : il faut que toutes les conditions soient `true` pour que `true` soit retourné. 
+- ! (NOT) : 
+
 
 Les Boucles
 -----------
 
-Les Fonctions
--------------
+Les boucles sont utilisées pour répéter du code un certain nombre de fois.
 
-Les Objets
-----------
+Syntaxe de la boucle `while` 
+	
+	let a = true;
+	while(a) {
+		alert("a est true");
+	}
 
-Un objet, *c'est une collection de **plusieurs valeurs***. En Js, les tableaux sont considérés comme des objets.
-C'est une *logique de programmation* qui permet de décomposer son code de façon *plus compréhensible*.
+**Attention**. Cette boucle est **infinie** car la condition sera toujours vraie.
 
-Déclarer un objet de façon littérale:
+Exemple d'une boucle `while`non infinie:
 
-    Let objectName = {
-        keyName = value1;
-        keyName2 = value2;
+	let i = 1;
+	while (i < 15) {
+		alert("i est inférieur à 15");
+		i++;
+	}
 
-        funcName() {
-            *instructions*
-        }
-    };
+-> i est initialement égal à i. La condition évalue la valeur de i à chaque nouveau tour et affiche un message tant que i n'atteint pas 15. A chaque tour, i est incrémenté. 
 
-Quand on ajoute une fonction à un objet (`funcName()` dans l'exemple), celle-ci devient une **méthode** de l'objet. On n'utilise donc pas le mot-clé function pour déclarer une fonction dans un objet.
+Syntaxe de la boucle `do...while`
 
-Le mot-clé `this` fait référence à l'objet courant.
+	do {
+		alert("i est inférieur à 15");
+		i++;
+	} while (i < 15);
 
-DOM (Document Object Model)
----------------------------
+La boucle *do...while* permet de s'assurer que le bloc de code sera exécuté **au moins une fois** peu importe si la condition est `true` ou `false`.
 
-Il permet à js de *jouer sur le contenu HTML*.
-Tout ce qui est dans le HTML - *y compris les commentaires* - fait partie du **DOM**.
 
-Il y a **12 types de nodes**. Dans la pratique, on ne s'en sert que de **quatre** :
-- `document` qui est le point d'entrée du DOM.
-- `element nodes` qui sont les *tag HTML*.
-- `text nodes` qui contiennent le texte.
-- et les `commentaires`. 
+Syntaxe de la boucle `for`
 
-=> à vérifier que ce soit bien le cas...
+	for(let i=0; i<15; i++) {
+		alert("i est inférieur à 15");
+	}
 
-Dans le Dom **null** veut dire *ce qui n'existe pas*.
+La boucle `for` est la plus utilisée. 
+Au sein des parenthèses, on commence par *entrer une valeur de départ*,  puis on définit une *condition* et enfin on décide d'un *compteur*. 
+Tant que la valeur de départ reste vraie au regard de la condition définie en "avançant" selon le compteur défini pour chaque tour, alors le bloc de code est exécuté. 
 
-Les *child nodes* sont les éléments qui sont des enfants directs. 
-Les **descendants* sont tous les éléments inclus dans le parent, y compris les enfants des enfants.
-Les propriétés `firstChild`et `lastChild` donnent respectivement accès au premier et au dernier enfant.
+Chacune des trois parties de la boucle `for` peut être **omise**. 
+S'il n'y a pas de valeur de départ alors rien ne sera fait au commencement de la boucle.
+Cependant, même si l'on enlève une ou plusieurs partie de la boucle, il faut conserver les `;`
+
+
