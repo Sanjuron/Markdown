@@ -21,7 +21,7 @@ Une fonction s'appelle de cette manière:
 
  Il est de bon usage de débuter le nom de la fonction *par un verbe qui décrit l'action effectué*. Une fonction ne doit *faire que ce que son nom suggère*, rien de plus. Si deux actions indépendantes sont liées, alors il faut créer deux fonctions, et les réunir dans une troisième. 
 
-Exemples de verbes couramment utlisé pour nommer des fonctions:
+Exemples de verbes couramment utilisés pour nommer des fonctions:
 
 - **display** : pour **afficher** quelque chose.
 - **get** : pour **retourner** une valeur.
@@ -42,17 +42,17 @@ Exemple d'une fonction avec paramètres :
 	//
 	movie("Akira Kurosawa", "Barberousse"); // affiche : Akira Kurosawa a réalisé Barberousse.
 
-Une valeur par défaut peut-être mise en paramètre au cas où celui-ci n'aurait pas été fourni.
+Une valeur par défaut **peut être assignée à un paramètre** au cas où celui-ci n'aurait pas été fourni.
 
 	function movie(director, film = "non renseigné")
 	movie("Akira Kurosawa"); // affichera "Akira Kurosawa a réalisé non renseigné".
 
-Une fonction peut retourner une valeur en tant que résultat par l'utilisation du mot-clé `result`.
+Une fonction peut retourner une valeur en tant que résultat par l'utilisation du mot-clé `return`.
 **Attention**. L'utilisation de `return` stoppe l'exécution du code. 
 
-Il est possible d'écrire une fonction d'une manière plus concise. **C'est la fonction fléchée (arrow function)**
+Il est possible d'écrire une fonction d'une manière plus concise. **C'est la fonction fléchée (arrow function)**.
 
-Syntaxe d'une *arrow function*
+Syntaxe d'une *arrow function*:
 
 	let func = (arg1, arg2, ...argN) => expression
 
