@@ -111,6 +111,27 @@ Les opérateurs logiques:
 - ! (NOT) : 
 
 
+L'instruction `switch` peut remplacer plusieurs `if`.
+
+La syntaxe switch :
+
+	switch(x) {
+		case 'value1': 
+			alert("value1 est true");
+			break;
+		case 'value2':
+			alert("value2 est true");
+			break;
+		case 'value3':
+			alert("value3 est true");
+			break;
+		default:
+			alert("aucun case ne fait l'affaire. Message par défaut");
+	}
+
+Chaque `case` évalue sa valeur par rapport à la condition placée dans le `switch`. Si `true`alors le bloc à l'intérieur est exécuté. Le mot-clé `break` permet de mettre fin à l'exécution. S'il n'y en avait pas, tous les autres blocs seraient exécutés. Le mot-clé `default` permet d'afficher un message si aucune des `case` ne "matche" la condition. 
+
+
 Les Boucles
 -----------
 
@@ -159,4 +180,6 @@ Chacune des trois parties de la boucle `for` peut être **omise**.
 S'il n'y a pas de valeur de départ alors rien ne sera fait au commencement de la boucle.
 Cependant, même si l'on enlève une ou plusieurs partie de la boucle, il faut conserver les `;`
 
+Le mot-clé `continue` est une version légère de `break`. **Il ne met pas fin à l'exécution de la boucle. Il cesse seulement l'itération de la boucle et la force à en redémarrer une nouvelle si la condition le permet**.
+Il est utile, entre autre, pour diminuer **les imbrications**. 
 
