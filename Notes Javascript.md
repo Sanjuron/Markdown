@@ -54,6 +54,7 @@ Liste des opérateurs:
 - l'exponientation ** Ex : `2**3` renvoie `8`
 
 Le signe `+` appliqué à des chaînes de caractères permet leur **concaténation**.
+
 	let concat = "Julien" + "Sanjuron";
 
 Si l'un des opérandes est un *string* alors l'autre ou les autres opérandes seront converties en *string*. Il faut cependant prendre en compte la précédence des opérations. 
@@ -70,12 +71,12 @@ La forme préfixée retourne la nouvelle valeur que la forme suffixée retourne 
 
 Liste des comparaisons:
 
-- <
-- <=
-- >
-- >=
-- ==
-- ===
+- `<`
+- `<=`
+- `>`
+- `>=`
+- `==`
+- `===`
 
 Les Structures conditionnelles
 ------------------------------
@@ -97,7 +98,7 @@ La structure `if` évalue une *condition* entre parenthèses et si le résultat 
 
 Une structure if peut se voir rajouter `else` ou `else if` afin d'exécuter un autre bloc de code si la ou les conditions initiales ne sont pas remplies.
 
-Il est aussi possible d'opter pour une *structure ternaire* 
+Il est aussi possible d'opter pour une **structure ternaire**
 
 	let result = condition ? value1 : value 2;
 
