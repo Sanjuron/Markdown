@@ -4,6 +4,8 @@ DOM (Document Object Model)
 Il permet à js de *jouer sur le contenu HTML*.
 Tout ce qui est dans le HTML - *y compris les commentaires* - fait partie du **DOM**.
 
+Un [article intéressant](https://css-tricks.com/dom/) et facile d'accès sur ce qu'est le DOM.
+
 Il y a **12 types de nodes**. Dans la pratique, on ne s'en sert que de **quatre** :
 - `document` qui est le point d'entrée du DOM.
 - `element nodes` qui sont les *tag HTML*.

@@ -48,14 +48,13 @@ Une valeur par défaut **peut être assignée à un paramètre** au cas où celu
 	movie("Akira Kurosawa"); // affichera "Akira Kurosawa a réalisé non renseigné".
 
 Une fonction peut retourner une valeur en tant que résultat par l'utilisation du mot-clé `return`.
-**Attention**. L'utilisation de `return` stoppe l'exécution du code. 
+**Attention**: l'utilisation de `return` stoppe l'exécution du code. 
 
 Il est possible d'écrire une fonction d'une manière plus concise. **C'est la fonction fléchée (arrow function)**.
 
 Syntaxe d'une *arrow function*:
 
 	let func = (arg1, arg2, ...argN) => expression
-
 
 
 Les Objets
@@ -66,15 +65,38 @@ C'est une *logique de programmation* qui permet de décomposer son code de faço
 
 Déclarer un objet de façon littérale:
 
-    Let objectName = {
-        keyName = value1;
-        keyName2 = value2;
+    let objectName = {
+        keyName: value1,
+        "keyName 2": value2,
 
         funcName() {
             *instructions*
         }
     };
 
+Les propriétés d'un objet sont construits sur le modèle **key: value;** La *key* est un *string* et la *value* peut être de n'importe quel type.
+
 Quand on ajoute une fonction à un objet (`funcName()` dans l'exemple), celle-ci devient une **méthode** de l'objet. On n'utilise donc pas le mot-clé function pour déclarer une fonction dans un objet.
+
+Il y a deux syntaxes pour créer un objet vide:
+
+	let user = new Object(); // syntaxe de l'objet constructeur (object constructor)
+	let user = {}; // syntaxe de l'objet littéral (object litteral)
+
+Pour accéder à une propriété d'un objet, on préfixe le nom de l'objet à la `key` relié par un point. Cette notation ne fonctionne que sur **les propriétés en un mot**. Pour les propriétés à mots mulptiples (qui doivent d'ailleurs être déclarées entre guillemets dans l'objet), il faut utiliser la notation entre crochets.
+
+	alert(objectName.keyName); // affiche la valeur de la propriété
+	alert(objectName["keyName 2"])
+
+Pour **supprimer une propriété** on utilise l'opérateur `delete`.
+
+La boucle `for...in`:
+
+Elle permet d'itérer les `keys` d'un objet. Sa syntaxe: 
+
+	for (let key in object) {
+		alert(key); // affiche les keys
+		alert(user[key]); // affiche les valeurs
+	}
 
 Le mot-clé `this` fait référence à l'objet courant.
