@@ -24,7 +24,7 @@ Alert / Prompt / Confirm / Console log
 
 - `alert("hello");`  affiche une *fenêtre modale*
 - `prompt("Est-ce que ?", [default]);` pose une question à l'utilisateur et default permet d'entrer un texte dans le champ input (optionnel)
-- `confirm("Oui ou non);` proposer de confirmer une question. Renvoie `true` ou `false` si OK ou Cancel.
+- `confirm("Oui ou non");` proposer de confirmer une question. Renvoie `true` ou `false` si OK ou Cancel.
 
 
 
@@ -82,6 +82,7 @@ Il y a **12 types de nodes**. Dans la pratique, on ne s'en sert que de **quatre*
 - `element nodes` qui sont les *tag HTML*.
 - `text nodes` qui contiennent le texte.
 - et les `commentaires`. 
+
 => à vérifier que ce soit bien le cas...
 
 Dans le Dom **null** veut dire *ce qui n'existe pas*.
