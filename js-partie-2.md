@@ -130,3 +130,19 @@ Exemple:
 
 *A noter : la valeur de `this` diffère selon que l'on est en "strict mode" ou non, si on l'utilise dans une fonction qui ne fait pas appel à un objet. En strict mode, sa valeur serait `undefined` alors qu'en non strict mode, sa valeur serait celle de l'objet global.*
 
+Le mot-clé `new` permet de créer une multitude d'objets similaires. 
+
+Syntaxe de la fonction constructeur:
+
+	function User(name, alias) {
+		this.name = name;
+		this.alias = alias;
+	}
+
+	let user = new User("Julien", "Sanjuron");
+
+	alert(user.name + user.alias);
+
+*A noter la convention consistant à déclarer une fonction constructeur avec une majuscule*.
+
+*les constructeurs possèdent rarement de `return`. Lorsque c'est le cas, associé à un objet l'objet sera retourné, sinon ce sera le `this`.
