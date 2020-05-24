@@ -1,7 +1,8 @@
 Notes Javascript - Première partie : jusqu'aux boucles
 ===============================================
 
-Inclure le `<script src = "js/app.js"></script>` à la toute fin du **body** pour que *la page exécute d'abord l'HTML et le CSS*.
+Inclure le `<script src = "js/app.js"></script>` à la toute fin du **body** pour que *la page exécute d'abord l'HTML et le CSS*. (voir la partie 3 pour plus de précisions)
+
 
 Les types de données en JS
 --------------------

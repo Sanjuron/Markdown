@@ -61,7 +61,7 @@ Les Objets
 ----------
 
 Un objet, *c'est une collection de **plusieurs valeurs***. En Js, les tableaux sont considérés comme des objets.
-C'est une *logique de programmation* qui permet de décomposer son code de façon *plus compréhensible*.
+C'est une *logique de programmation* qui permet de décomposer son code de façon *plus compréhensible*. Ecrire du code en utilisant des objets pour représenter des entités s'appelle de **la programmation orientée objet**.
 
 Déclarer un objet de façon littérale:
 
@@ -99,4 +99,34 @@ Elle permet d'itérer les `keys` d'un objet. Sa syntaxe:
 		alert(user[key]); // affiche les valeurs
 	}
 
-Le mot-clé `this` fait référence à l'objet courant.
+**Attention**: une variable ne range pas l'objet en lui-même mais son adresse dans la mémoire, c'est-à-dire **une référence** de celui-ci. Ce qui veut dire que si l'on copie la variable d'un objet dans une autre variable, alors **toute modification** d'une propriété dans la nouvelle variable modifiera aussi la variable première. 
+
+Exemple :
+
+	let user = {
+		name: "Julien",
+	};
+
+	let admin = user;
+
+	admin.name = "Sanjuron";
+
+	alert(user.name); // affiche "Sanjuron"
+
+
+Dans les objets, **les actions sont représentés par les fonctions**, c'est-à-dire les *méthodes*. Il est souvent nécessaire pour une méthode d'accéder aux informations rangées dans l'objet pour accomplir son travail. **Pour accéder à l'objet, la méthode utilise le mot-clé `this`.**
+
+Exemple:
+	
+	let user = {
+		name: "Julien",
+		alias: "Sanjuron",
+
+		displayFullName() {
+			alert("Tu t'appelles " + this.name + " et ton pseudo est: " + this.alias);
+		}
+	};
+	user.displayFullName(); // affiche "Tu t'appelles Julien et ton pseudo est Sanjuron"
+
+*A noter : la valeur de `this` diffère selon que l'on est en "strict mode" ou non, si on l'utilise dans une fonction qui ne fait pas appel à un objet. En strict mode, sa valeur serait `undefined` alors qu'en non strict mode, sa valeur serait celle de l'objet global.*
+
