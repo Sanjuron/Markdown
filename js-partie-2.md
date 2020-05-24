@@ -145,4 +145,8 @@ Syntaxe de la fonction constructeur:
 
 *A noter la convention consistant à déclarer une fonction constructeur avec une majuscule*.
 
-*les constructeurs possèdent rarement de `return`. Lorsque c'est le cas, associé à un objet l'objet sera retourné, sinon ce sera le `this`.
+*les constructeurs possèdent rarement de `return`. Lorsque c'est le cas, associé à un objet l'objet sera retourné, sinon ce sera le `this`*.
+
+
+Les Classes
+--------
