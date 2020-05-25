@@ -68,3 +68,15 @@ Si l'on ne souhaite accéder qu'aux *element nodes*, il faut taper les commandes
 Accéder au DOM de façon particulière
 ------------------------------------
 
+Liste des 6 méthodes principales pour accéder à des éléments de façon plus précise :
+
+- `document.getElementById("")` donne accès à un `id` où qu'il se trouve dans le document. C'est la raison pour laquelle il ne peut y en avoir qu'un par document.
+- `document.getElementsByTagName("")` retourne dans un tableau tous les éléments du même genre (`p`, `h1`, etc.)
+- `document.getElementsByClassName()` retourne dans un tableau tous les éléments d'une même classe
+- `document.querySelector()` retourne le premier élément obtenu grâce à un sélécteur css
+- `document.querySelectorAll()` retourne tous les éléments obtenus grâce à un sélécteur css
+- `document.getElementsByName` rarement utilisé.
+
+Il est judicieux de stocker ces requêtes dans une variable pour pouvoir ensuite y appliquer d'autres méthodes.
+
+
