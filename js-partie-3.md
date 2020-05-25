@@ -15,7 +15,7 @@ Un [article intéressant](https://css-tricks.com/dom/) et facile d'accès sur ce
 
 **Illustration du DOM TREE :**
 
-[le dom tree](https://www.w3schools.com/js/pic_htmltree.gif)
+![le dom tree](https://www.w3schools.com/js/pic_htmltree.gif)
 
 Il y a **12 types de nodes**. Dans la pratique, on n'en utilise'que **quatre** :
 - `document` qui est le point d'entrée du DOM.
