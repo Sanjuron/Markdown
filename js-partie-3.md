@@ -17,7 +17,7 @@ Un [article intéressant](https://css-tricks.com/dom/) et facile d'accès sur ce
 
 ![le dom tree](https://www.w3schools.com/js/pic_htmltree.gif)
 
-Il y a **12 types de nodes**. Dans la pratique, on n'en utilise'que **quatre** :
+Il y a **12 types de nodes**. Dans la pratique, on n'en utilise que **quatre** :
 - `document` qui est le point d'entrée du DOM.
 - `element nodes` qui sont les *tag HTML*.
 - `text nodes` qui contiennent le texte.
