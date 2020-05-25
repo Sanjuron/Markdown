@@ -13,7 +13,11 @@ Le DOM remplit **2 fonctions**. Il fournit à l'intention de JS **une carte stru
 
 Un [article intéressant](https://css-tricks.com/dom/) et facile d'accès sur ce qu'est le DOM.
 
-Il y a **12 types de nodes**. Dans la pratique, on ne s'en sert que de **quatre** :
+**Illustration du DOM TREE :**
+
+[le dom tree](https://www.w3schools.com/js/pic_htmltree.gif)
+
+Il y a **12 types de nodes**. Dans la pratique, on n'en utilise'que **quatre** :
 - `document` qui est le point d'entrée du DOM.
 - `element nodes` qui sont les *tag HTML*.
 - `text nodes` qui contiennent le texte.
@@ -23,6 +27,44 @@ Il y a **12 types de nodes**. Dans la pratique, on ne s'en sert que de **quatre*
 
 Dans le Dom **null** veut dire *ce qui n'existe pas*.
 
-Les *child nodes* sont les éléments qui sont des enfants directs. 
-Les **descendants* sont tous les éléments inclus dans le parent, y compris les enfants des enfants.
+
+Accéder au DOM de façon générale
+----------------------
+
+L'objet `document` est le point d'entrée du DOM.
+
+- `document.documentElement` donne accès à la balise `<html>`
+- `document.body` donne accès à la balise `<body>`
+- `document.head` donne accès à la balise `<head>`
+
+Les **child nodes** sont les éléments qui sont des enfants directs. 
+Les **descendants** sont tous les éléments inclus dans le parent, y compris les enfants des enfants.
 Les propriétés `firstChild`et `lastChild` donnent respectivement accès au premier et au dernier enfant.
+
+	elem.childNodes[0] === elem.firstChild
+	elem.childNodes[elem.childNodes.lengh - 1] === elem.lastChild
+
+`childNodes` n'est pas un *array* mais une *collection*. On **ne peut pas utiliser les méthodes de tableaux** mais il est possible d'**utiliser une boucle `for...of` pour itérer à l'intérieur**.
+
+	for (let node of document.body.childNodes) {
+		console.log(node); // affichera tous les nodes enfants de body
+	}
+
+les *siblings* sont les nodes qui ont les mêmes parents (des frères et soeurs).
+
+- `nextSibling` donne accès au "frère" suivant.
+- `previousSibling` donne accès au "frère" précédent.
+- `parentNode` donne accès au parent du node. 
+
+Toutes ces propriétés donnent accès à **tous les nodes** (*text nodes, element nodes, comment nodes*).
+
+Si l'on ne souhaite accéder qu'aux *element nodes*, il faut taper les commandes suivantes:
+
+- `children` donne accès aux enfants qui sont *element nodes*
+- `firstElementChild`, `lastElementChild`
+- `previousElementSibling`, `nextElementSibling`
+- `parentElement` 
+
+Accéder au DOM de façon particulière
+------------------------------------
+
