@@ -17,3 +17,9 @@ Pour **concaténer** deux variables, on utilise le signe `.`
 
 `//`et `#` permettent de créer du commentaire monoligne. 
 
+
+Threshold fait référence à un seuil. C'est une limite au-delà de laquelle quelque chose change.
+
+Les **filtres** PHP sont utilisés pour aider/simplifier la **validation de données**. 
+
+La classe **closure** est utilisée pour **représenter les fonctions anonymes**. 

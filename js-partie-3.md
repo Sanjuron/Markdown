@@ -80,3 +80,27 @@ Liste des 6 méthodes principales pour accéder à des éléments de façon plus
 Il est judicieux de stocker ces requêtes dans une variable pour pouvoir ensuite y appliquer d'autres méthodes.
 
 
+//
+fonction eval() permet d'évaluer du code js représenté sous forme d'une chaîne de caractères. **Dangereux à utiliser**
+.getAttribute() renvoie la valeur d'un attribut donné de l'élément spécifié.
+
+
+Modifier le document
+---------------
+
+Il existe **deux méthodes** pour créer des *nodes* dans le DOM.
+
+- `document.createElement(tag)`: crée un nouvel *element node* avec le tag en question.
+- `document.createTextNode(text)`: crée un nouveau *text node* avec le texte en question.
+
+Les différentes méthodes d'insertion:
+
+- `node.append()` : insère *node* ou *string* à la fin du node.
+- `node.prepend()`: insère *node* ou *string* au début du node. 
+- `node.before()`: insère *node* ou *string* avant le node.
+- `node.after()`:  insère *node* ou *string*  après le node.
+- `node.replaceWith()` replace le node avec le *node* ou *string*
+
+Pour enlever un node, on utilise la méthode `node.remove()`
+
+Pour cloner un node, on utilise `elem.cloneNode(true)`si l'on souhait le cloner **avec tous ses attributs et sous-éléments**. Sinon l'on utilise `element.cloneNode(false)` pour le cloner sans ses éléments enfants.
