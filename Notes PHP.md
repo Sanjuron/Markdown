@@ -23,3 +23,17 @@ Threshold fait référence à un seuil. C'est une limite au-delà de laquelle qu
 Les **filtres** PHP sont utilisés pour aider/simplifier la **validation de données**. 
 
 La classe **closure** est utilisée pour **représenter les fonctions anonymes**. 
+
+
+Twig
+----
+
+Les templates permettent de séparer le code PHP du code HTML.
+
+Le moteur de templates Twig est un pseudo-langage.
+
+Elements de syntaxe:
+
+- `{{ ... }}` affiche quelque chose
+- `{% ... %}`fait quelque chose
+- `{# ... #}` pour les commentaires.
