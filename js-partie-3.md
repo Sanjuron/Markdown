@@ -104,3 +104,7 @@ Les différentes méthodes d'insertion:
 Pour enlever un node, on utilise la méthode `node.remove()`
 
 Pour cloner un node, on utilise `elem.cloneNode(true)`si l'on souhait le cloner **avec tous ses attributs et sous-éléments**. Sinon l'on utilise `element.cloneNode(false)` pour le cloner sans ses éléments enfants.
+
+La méthode `setAttribute("typeAttribut", "nomAttribut")` permet, comme son nom l'indique, de donner des attributs (*href, id, class*) à des noeuds du Dom. Ex: `div.setAttribute("class", "firstDiv")` donne au div sélectionné un attribut `class="firstDiv"`.
+
+`preventDefault()` est une méthode l'*event listener* `click` qui permet de bloquer le comportement par défaut du navigateur.
