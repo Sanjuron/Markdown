@@ -9,6 +9,12 @@ Tout ce qui est dans le HTML - *y compris les commentaires* - fait partie du **D
 - `defer` indique au navigateur de télécharger les scripts mais de ne pas les exécuter tant que le DOM n'est pas fini de charger.
 - `async` indique au navigateur que le script doit être exécuter de **manière asynchrone**. Càd que me navigateur initie une requête pour télécharger le script et le charge dès que disponible mais qu'il continue le chargement de la page entretemps. Ne garantit pas que la page sera chargée à temps. De plus, s'il y a plusieurs scripts à charger - et que ceux-ci sont dépendants les uns de autres - rien ne dit qu'il seront chargés dans le bon ordre.
 
+ Il existe une autre manière de gérer le chargement du Javascript si l'on met le script dans le `head`. On inclue la totalité du code Js dans  l'addEventListener suivant:
+
+	document.addEventListener('DOMContentLoaded', function(){}
+ainsi le Js ne sera lancé que lorsque le DOM sera totalement chargé. 
+
+
 Le DOM remplit **2 fonctions**. Il fournit à l'intention de JS **une carte structurée de la page en traduisant le HTML** dans un format que JS peut comprendre. Chaque morceau du document est un **noeud** (*node*) auquel JS peut accéder. Et la deuxième fonction consiste **à fournir à JS un ensemble de méthodes et fonctions permettant d'accéder aux noeuds cartographiés**.
 
 Un [article intéressant](https://css-tricks.com/dom/) et facile d'accès sur ce qu'est le DOM.
