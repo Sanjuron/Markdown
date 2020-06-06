@@ -39,3 +39,9 @@ Pour ouvrir une fenêtre de développement dans le navigateur pour prévisualise
 
         cd my-app 
         npm start
+
+Les applications React ont un **composant racine** qui est toujours rendu (*rendered*) dans le DOM. (Généralement App.js). Les autres composants sont imbriqués à l'intérieur de celui-ci (*nesting*).
+
+**Attention** les vidéos du Net ninja au sujet de Create React App ne coincident pas avec ma version. Plusieurs changements de syntaxe, dont notamment les *class extends* qui deviennent de simples fonctions et la disparition de la fonction render()
+
+On imbrique un composant dans le composant racine simplement en mettant **le nom du composant dans une balise autofermante** au sein du `return`.
