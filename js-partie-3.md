@@ -90,7 +90,7 @@ Modifier le document
 
 Il existe **deux méthodes** pour créer des *nodes* dans le DOM.
 
-- `document.createElement(tag)`: crée un nouvel *element node* avec le tag en question.
+- `document.createElement("tag")`: crée un nouvel *element node* selon le tag en question.
 - `document.createTextNode(text)`: crée un nouveau *text node* avec le texte en question.
 
 Les différentes méthodes d'insertion:
