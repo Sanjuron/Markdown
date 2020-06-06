@@ -45,3 +45,34 @@ Les applications React ont un **composant racine** qui est toujours rendu (*rend
 **Attention** les vidéos du Net ninja au sujet de Create React App ne coincident pas avec ma version. Plusieurs changements de syntaxe, dont notamment les *class extends* qui deviennent de simples fonctions et la disparition de la fonction render()
 
 On imbrique un composant dans le composant racine simplement en mettant **le nom du composant dans une balise autofermante** au sein du `return`.
+
+Les *props*
+-------
+
+*Props* est le diminutifs de *properties*.
+Les *props* sont une manière de passer des datas du composant parent à un composant enfant.
+
+On déclare les *props* dans le composant parent en les inscrivant dans la balise du composant enfant de cette manière :
+        propsName = "valeur"
+        <Ninjas name="Sanjuron" age="30" belt="black"/>
+
+Puis en les intégrant dans le composant enfant de cette manière:
+        function Ninjas(props) {
+
+        return(
+            <div className="ninja">
+                <div>Name: {props.name}</div>
+                <div>Age: {props.age}</div>
+                <div>Belt: {props.belt}</div>
+            </div>
+        )}
+Mais il est préférable d'utiliser cette autre façon, qui rend le code plus facilement réutilisable:
+        function Ninjas(props) {
+        const { name, age, belt} = props;
+        return(
+            <div className="ninja">
+                <div>Name: {name}</div>
+                <div>Age: {age}</div>
+                <div>Belt: {belt}</div>
+            </div>
+        )}
