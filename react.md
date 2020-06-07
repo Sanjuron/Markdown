@@ -76,3 +76,10 @@ Mais il est préférable d'utiliser cette autre façon, qui rend le code plus fa
                 <div>Belt: {belt}</div>
             </div>
         )}
+
+Container vs UI Components
+--------------------
+
+Les composants de type container ne sont pas généralement **pas concernés par l'interface utilisateur** (UI) ou le design de l'app. Ils contiennent des `states`. Ils sont utilisés en tant de que **sources de données**. Ils peuvent recevoir (*nest*) plusieurs composants. on utlise des **classes** pour créer des types de composants (Est-ce encore le cas avec la nouvelle version ?). Ils sont aussi appelés *class-based components*.
+
+Les composants de type UI ne contiennent pas de `states` et **reçoivent toutes leurs données par le biais de `props`.** Leur principale préoccupation est l'**interface**, comment les données sont présentées à l'utilisateur. On utilise des **fonctions**, pas des classes, pour les créer. 
