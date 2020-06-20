@@ -86,7 +86,30 @@ Exemple
     FROM student
     WHERE firstname IN ('Jean', 'Laurie', 'Marc')
 
-Cette commande renvoie tous les lignes du champ `firstname` de la table `student` ou le `firstname` correspondra à Jean, Laurie ou Marc.
+Cette commande renvoie toutes les lignes du champ `firstname` de la table `student` ou le `firstname` correspondra à Jean, Laurie ou Marc.
+
+BETWEEN
+------
+
+On utilise cet opérateur dans la commande `WHERE` pour **établir un intervalle de données**. L'exemple le plus fréquent est celui visant à récupéré des données entre deux dates. 
+
+    SELECT *
+    FROM table
+    WHERE champ BETWEEN "date1" AND "date2"
+
+Cette commande renvoie toutes les données de tous les champs de la `table` qui sont situées entre la `date1` et la `date2` situées dans le `champ`
+
+**Attention** : Tous les SGBD ne gèrent pas `BETWEEN` de la même manière. Certains excluent les bornes de l'intervalle; d'autres les incluent.
+
+LIKE
+-----
+
+Cet opérateur permet d'effectuer des recherches sur des modèles particuliers. Il peut séléctionner le début d'un mot, la fin, ou un ou plusieurs caractères au milieu.
+
+    LIKE '%a' : recherche toutes les chaînes de caractères qui se terminent par un a.
+    LIKE 'a%' : recherche toutes les chaînes de caractères qui débutent par un a.
+    LIKE '%a%' : recherche toutes les chaînes de caractères qui contiennent.
+    LIKE 'pas%on' : recherche toutes les chaînes de caractères qui débutent par pas et qui se terminent par on.
 
 
 
