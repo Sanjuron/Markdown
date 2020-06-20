@@ -67,6 +67,30 @@ On peut utiliser **les opérateurs de comparaisons classiques** (*supérieur, é
     IS NULL pour une valeur nulle
     IS NOT NULL pour une valeur non nulle
 
+AND & OR
+-------
+
+Il est possible d'utiliser les opérateurs `AND` et `OR` au sein d'une commande `WHERE` pour **combiner des conditions**. Ils peuvent être **combinés à l'infini**.
+
+`AND` rend obligatoire la présence des conditions.
+`OR` vérifie la présence d'une des conditions.
+
+IN
+---
+
+Avec la commande `WHERE`, `IN` s'emploie pour **vérifier si une colonne est égale à une valeur ou une autre et ainsi de suite, sans avoir à utiliser `OR` de nombreuses fois**.
+
+Exemple
+
+    SELECT firstname
+    FROM student
+    WHERE firstname IN ('Jean', 'Laurie', 'Marc')
+
+Cette commande renvoie tous les lignes du champ `firstname` de la table `student` ou le `firstname` correspondra à Jean, Laurie ou Marc.
+
+
+
+
 
 
 
