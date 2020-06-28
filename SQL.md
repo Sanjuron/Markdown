@@ -111,6 +111,43 @@ Cet opérateur permet d'effectuer des recherches sur des modèles particuliers. 
     LIKE '%a%' : recherche toutes les chaînes de caractères qui contiennent.
     LIKE 'pas%on' : recherche toutes les chaînes de caractères qui débutent par pas et qui se terminent par on.
 
+IS NULL / IS NOT NULL
+------------------
+
+L'opérateur `IS` permet de filtrer les résultats qui contiennent la valeur nulle. 
+
+Exemple
+
+    SELECT *
+    FROM table
+    WHERE nom_colonne IS NULL
+
+Cela renvoie toutes les données de tous les champs de la `table`  dont les valeurs de `nom_colonne` sont nulles. 
+
+GROUP BY
+-------
+
+Cette commande permet de **grouper plusieurs résultats**  et d'utiliser **une fonction de totaux sur un groupe de résultat**. C'est une méthode qui permet d'**éviter des doublons**.
+
+Exemple
+
+    SELECT colonne1, fonction(colonne2)
+    FROM table
+    GROUP BY colonne1
+
+Quelques fonctions parmi les plus utilisées : 
+
+- `SUM()` : calcule la somme 
+- `AVG()` : calcule la moyenne
+- `COUNT()` : compte le nombre de lignes
+- `MAX()` : récupère la valeur maximale
+- `MIN` : récupère la valeur minimale
+
+    SELECT client, SUM(tarif)
+    FROM achat
+    GROUP BY client
+
+Cette commande s'opére sur la table achat. Elle regroupe les clients en additionant les valeurs dans la colonne tarif. 
 
 
 
