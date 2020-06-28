@@ -94,3 +94,13 @@ Trois phases dans un cycle de vie :
 - Unmounting
 
 [Diagramme sur le cycle de vie](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) 
+
+React Router
+------------
+
+React un *single page application* c'est-à-dire **qu'un seul fichier HTML est envoyé au navigateur** depuis le serveur.
+
+Le **React Router** intercepte les requêtes pour aller vers d'autres pages avant qu'elles ne soient envoyées au serveur, et présente le composant en question qu'il injecte dans `App.js` à la place. 
+
+        // commande pour installer le router react dans un projet
+        npm install react-router-dom
