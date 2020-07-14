@@ -51,9 +51,55 @@ Dans node, on crée manuellement le serveur qui écoute les requêtes du serveur
     http.createServer((req, res) => { }) pour créer le serveur
     server.listen(3000, 'localhost', () => {}) pour écouter un serveur au port 3000
 
-Localhost est un nom de domaine qui pointe vers notre ordinateur. Il écoute les requêtes venant de notre ordinateur. Un numéro de port est comme une porte vers internet. Chaque logiciel connecté vers internet en utilise un qui lui est propre pour éviter que les informations ne se mélangent.
+Localhost est un nom de domaine qui pointe vers notre ordinateur. Il **écoute les requêtes** venant de notre ordinateur. Un numéro de port est comme une porte vers internet. Chaque logiciel connecté vers internet en utilise un qui lui est propre pour éviter que les informations ne se mélangent.
 
     syntaxe : localhost:3000
+
+A chaque fois que l'on fait un changement dans le fichier, il faut **relancer le serveur**.
+
+L'objet Response
+----------------
+
+Méthode pour envoyer du html au serveur mais peu pratique s'il faut envoyer beaucoup. `"text/html"` peut être remplacé par `"text/plain"` si l'on envoie du texte simple.
+
+    res.setHeader('Content-type', "text/html");
+    res.write('<p>hello sanjuron</p>');
+    res.write('<p>hello again, sanjuron</p>');
+    res.end();
+
+
+Renvoyer des pages HTML
+---------------------
+
+Importer le fichier html grâce à `fs`. 
+
+Basic Routing
+-----------
+
+Utiliser une **méthode switch** avec un  404.html en default pour mettre en place plusieurs route et une page 404 pour les pages non existantes. **Méthode basique**, à utiliser lorsque le site reste petit.
+
+Le package "**express**" est à utiliser pour les redirections.
+
+Status Codes
+-----------
+
+Les Status Codes sont les types de réponses envoyées au serveur.
+
+- 200 = OK
+- 301 = La ressource a changé d'endroit. Signale une redirection permanente
+- 404 = page non trouvée
+- 500 = Internal server error
+
+Plus généralement
+
+- Codes de type 100 : Réponses informatives
+- Codes de type 200 : Codes de succès
+- Codes de type 300 : Codes de redirections
+- Codes de type 400 : Erreurs côté utilisateur ou client
+- Codes de type 500 : Erreurs côté serveur
+
+Redirections
+-------------
 
 
 
