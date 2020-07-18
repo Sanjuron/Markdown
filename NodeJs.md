@@ -114,3 +114,13 @@ Pour l'utiliser il faut taper la commande suivante dans le terminal du projet
 Pour créer un fichier package.json il faut taper la commande `npm init` dans le terminal. Le package.json surveille entre autres les dépendances de paquets, c'est-à-dire tous les paquets installés localement dans le projet
 
 **Lodash** est un paquet qui permet d'**importer des méthodes et fonctions**.
+
+Express
+------
+
+C'est un framework qui facilite le management des routes, des requêtes, réponses, de logique côté serveur. Il rend le code plus à facile à lire et à mettre à jour.
+
+    npm i express 
+    yarn add express
+
+Quand on fait une redirection avec page 404, il faut mettre le `app.use` de la requête 404 à la fin des redirections
