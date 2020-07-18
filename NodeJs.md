@@ -102,5 +102,15 @@ Redirections
 -------------
 
 
+NPM
+----
 
+**Nodemon** est un package npm pour accélérer la phase de développement et qui permet d**'éviter de relancer manuellement le serveur** à chaque opération.
 
+Pour l'utiliser il faut taper la commande suivante dans le terminal du projet
+
+    nodemon nomFichier
+
+Pour créer un fichier package.json il faut taper la commande `npm init` dans le terminal. Le package.json surveille entre autres les dépendances de paquets, c'est-à-dire tous les paquets installés localement dans le projet
+
+**Lodash** est un paquet qui permet d'**importer des méthodes et fonctions**.
