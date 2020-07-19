@@ -118,9 +118,26 @@ Pour créer un fichier package.json il faut taper la commande `npm init` dans le
 Express
 ------
 
-C'est un framework qui facilite le management des routes, des requêtes, réponses, de logique côté serveur. Il rend le code plus à facile à lire et à mettre à jour.
+C'est un framework qui **facilite le management des routes, des requêtes, réponses, de logique côté serveur**. Il rend le code plus à facile à lire et à mettre à jour.
 
     npm i express 
     yarn add express
 
 Quand on fait une redirection avec page 404, il faut mettre le `app.use` de la requête 404 à la fin des redirections
+
+View Engines
+--------
+
+Les View Engines permettent d'écrire du code html mais aussi d'injecter des données dynamiques et de la logique à l'intérieur.
+
+Le javascript est exécuté côté serveur.
+
+La syntaxe pour introduire des variables à l'intérieur du code ejs ressemble à celle de PHP:
+
+    <% const name = 'sanjuron' %>
+    <%= name %> // permet d'afficher le contenu de la variable dans le navigateur
+    <%- include('relative-path') %> // pour inclure des partials
+
+Les **partials** sont tout simplement des **bouts de code ejs que l'on réutilise** d'une page à l'autre, comme les navbars, head, footers.
+
+
