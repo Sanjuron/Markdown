@@ -24,7 +24,7 @@ Modules & Require
 File System
 ----------
 
-Un Buffer est un paquet de données envoyées quand on lit readfile. Il faut ajouter une méthode toString() si l'on pouvoir lire ce qui est dans le fichier
+Un Buffer est un paquet de données envoyées quand on lit readfile. Il faut ajouter une méthode `toString()` si l'on pouvoir lire ce qui est dans le fichier
 
 
 Streams & Buffers
@@ -32,8 +32,8 @@ Streams & Buffers
 
 Streams commence à utiliser une data avant qu'elle ne soit complètement chargé (comme du streaming)
 
-readStream()
-writeStream()
+    readStream()
+    writeStream()
 
 
 Clients & Servers
@@ -105,7 +105,7 @@ Redirections
 NPM
 ----
 
-**Nodemon** est un package npm pour accélérer la phase de développement et qui permet d**'éviter de relancer manuellement le serveur** à chaque opération.
+**Nodemon** est un package npm pour accélérer la phase de développement et qui permet d'**éviter de relancer manuellement le serveur** à chaque opération.
 
 Pour l'utiliser il faut taper la commande suivante dans le terminal du projet
 
