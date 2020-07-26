@@ -1,6 +1,6 @@
 SEO
 ====
-Notes basés sur le site moz.com:
+Notes basés sur le site [moz.com](https://moz.com/beginners-guide-to-seo):
 
 La hiérarchie des besoins de Mazlow est une théorie psychologique qui prioritarise les besoins humains les plus fondamentaux plutôt que les besoins les plus avancés. Les seconds besoins ne peuvent être atteints que si les premiers sont remplis. le site moz.com construit sur une hiérarchie SEO des besoins de Mazlow. 
 
@@ -35,4 +35,46 @@ White Hat SEO / Black Hat SEO
 
 **Black Hat SEO : techniques et stratégies pour spammer/tromper les moteurs de recherche.** Méthode dangereuse qui peut aboutir à une désindexation
 
+Les Principes SEO selon les grands moteurs de recherche:
+-------------------------------------------------------
 
+**GOOGLE**
+
+[Google webmaster guidelines](https://support.google.com/webmasters/answer/35769?hl=fr)
+
+Les principes de base :
+
+- Construire des pages pour les utilisateurs, pas les moteurs de recherches
+- Ne pas tromper les utilisateurs
+- Eviter les astuces pour améliorer le ranking
+- Réfléchir à ce qui rend son site unique, de valeur.
+
+Ce qu'il faut éviter:
+
+- Du contenu généré automatiquement
+- Participer à des systèmes de liens [lien google pour mieux comprendre](https://support.google.com/webmasters/answer/66356?hl=fr)
+- Créer des pages avec peu ou pas de contenu original
+- Le *[cloaking](https://support.google.com/webmasters/answer/66355?hl=fr)* , c'est-à-dire montrer à l'utilisateur un contenu différent de celui que l'on présente au moteur de recherche
+- Les textes et liens cachés
+- Les Pages satellites [*Doorway pages*](https://support.google.com/webmasters/answer/2721311?hl=fr)
+
+
+**BING**
+
+Les principes de base :
+
+- Produire du contenu clair, précis, facile à trouver, stimulant
+- Des titres clairs et pertinents
+- Bing récompense les liens qui ont grandi organiquement (pas compris)
+- L'influence sociale
+- Vitesse de chargement des pages
+- Description des pages avec l'attribut alt
+
+Ce qu'il faut éviter:
+
+- Le contenu mince, les pages avec principalement de la pub, ou avec des liens qui redirigent vers des sites mal rankés.
+- Le système de liens (voir google, plus haut)
+- Des URLS non précis, non clair, trop longs, non *keyword-inclusive*. Eviter aussi les caractères autres que les lettres.
+- Le contenu dupliqué
+- [L'accumulation de mots-clés](https://support.google.com/webmasters/answer/66358?hl=fr) : le *keyword-stuffing*
+- Le *cloaking*
