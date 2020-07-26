@@ -213,5 +213,38 @@ Le **code 301 de redirection** qui permet de suppléer à certaines de ces erreu
 Comment se rendre indexable ?
 ---------------------------
 
+**Qu'un site puisse être trouvé ne siginifie pas qu'il puisse être indexé.** Ce sont deux procédés différents. 
 
+Il est possible de voir la dernière fois que GoogleBot a crawlé un site en allant voir dans la version cache de la page. 
+
+Les pages internet peuvent *être désindéxées. 
+
+Quelques raisons pourquoi :
+
+- Erreur 404
+- Ajout d'un metatag noindex afin d'être omis de l'indexation
+- Violation des principes d'indexation
+- Bloquage du crawl
+
+Dire aux moteurs de recherche comment être indexé 
+-------------------------------------------------
+
+Les **Robots meta directives**
+
+Ce sont des instructions que l'on donne aux moteurs de recherche pour leur dire comment la page doit être traitée. 
+
+Les **Robots meta tags**
+
+Ils peuvent être utilisés au sein de la balise `<head>`. Exemples de meta tag :
+
+- index/no index : indique si la page doit être crawlée ou non. No index indique aux crawlers que la page ne doit pas être indéxée.
+- follow/nofollow : indique aux moteurs de recherche s'ils doivent suivre ou non les liens. 
+- noarchive : pour empêcher les moteurs de recherche de conserver un cache de la page. 
+
+Le **X-Robots tag**
+
+Il est utilisé au sein de l'header http de l'URL et **offre plus de flexibilité et de fonctionnalitées** que les meta tags car il permet entre autres, d'utiliser les RegEx. 
+
+Le fonctionnement du Ranking
+---------------------------
 
