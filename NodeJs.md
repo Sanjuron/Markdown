@@ -24,7 +24,23 @@ Modules & Require
 File System
 ----------
 
-Un Buffer est un paquet de données envoyées quand on lit readfile. Il faut ajouter une méthode `toString()` si l'on pouvoir lire ce qui est dans le fichier
+Pour requérir le module file system:
+
+    const fs = require("fs");
+
+Deux méthodes pour lire un fichier :
+
+- `fs.readFile("path", "utf8", function (err, data)) {console.log(data)}; // de façon asynchrone : chemin du fichier et encodage
+- `fs.readFileSync() // de façon synchrone : bloque le thread tant que la fonction n'a pas fini d'être éxécutée
+
+Pour écrire dans un fichier :
+
+- fs.writeFile("path", "ce que l'on veut écrire"); // l'endroit où on veut écrire et ce que l'on veut écrire
+- fs.writeFileSync();
+
+La méthode asynchrone a l'avantage de ne pas bloquer l'exécution du code. 
+
+Un **Buffer** est un paquet de données envoyées quand on lit `readFile`. Il faut ajouter une méthode `toString()` si l'on veut pouvoir lire ce qui est dans le fichier
 
 
 Streams & Buffers
