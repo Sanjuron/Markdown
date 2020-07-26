@@ -132,3 +132,26 @@ Et si le site fait partie du listing Google my Business:
 - Clicks-for-driving-directions
 
 Le trafic et le ranking doivent être envisagés comme un moyen, pas comme une fin. 
+
+
+Le fonctionnement des moteurs de recherche : Crawling, Indexing & Ranking
+=========================================================================
+
+Comment fonctionnent les moteurs de recherche ?
+---------------------------
+
+Les moteurs de recherche ont **trois fonctions primaires** :
+
+- **Crawl** : càd **parcourir le net pour du contenu**, en analysant le contenu des URL/sites
+- **Index** : Emmagasiner et organiser le contenu trouvé durant la phase de *crawl*
+- **Rank** : Fournir les bouts de contenus les plus aptes à répondre à la requête de l'utilisateur.
+
+Crawling
+-------
+
+Le processus de découverte durant lequel **les moteurs de recherche envoient des robots** (*aka* *crawlers* ou *spiders*) **pour trouver du contenu nouveau et mise à jour**. Le contenu est découvert par le biais de liens. 
+
+Les *googlebots* commencent par chercher quelques pages puis **suivent les liens présents sur ces pages** pour trouver de nouvelles URLS.
+
+**Caffeine** est le nom de l'index qui contient toute la base de données des URL trouvées. 
+
