@@ -252,6 +252,8 @@ Les moteurs de recherche **utilisent des algorithmes pour déterminer de la pert
 
 Si le SEO a beaucoup évolué par rapport à ce qu'il était auparavant, c'est parce que les algorithmes de recherche se sont perfectionnés et sont devenus plus difficiles à tromper. 
 
+**IMPORTANCE DES LIENS**
+
 Deux types de liens :
 
 - Backlink/indbound link : les liens d'autres sites qui pointent vers notre page
@@ -260,4 +262,38 @@ Deux types de liens :
 Le **PageRank**, qui fait partie de l'algorithme google, analyse les liens et **estime l'importance d'une page en fonction de la qualité et de la quantité des liens** qui pointent vers elle.
 
 **Plus il y a de *backlinks*** venant de sites de confiance,** plus la page apparaitra haut** dans les résultats. 
+
+**IMPORTANCE DU CONTENU**
+
+Etant donné que l'importance est mise sur l'intention de l'utilisateur, il est difficile de déterminer quels mots-clés doivent être dans une page ou quel taille l'article doit-il faire. 
+
+**RankBrain** est un composant d'apprentissage automatique de l'algorithme de Google. Le RankBrain ajuste constamment le ranking des pages en fonction de la pertinence de leur contenu.
+
+Engagement Metrics
+
+Ce sont les données qui représentent comment l'utilisateur interagit avec les sites qu'il visite :
+
+- **Clics** : nombre de visite par recherche
+- **Time on page** : le temps qu'un utilisateur reste sur une page avant de la quitter
+- **Bounce rate** : le pourcentage de sessions web où l'utilisateur n'a consulté qu'une page
+- **Pogo-sticking** : le fait de cliquer sur un résultat organique puis de revenir immédiatement sur la **SERP** pour choisir un autre résultat
+
+Google a confirmé qu'il utilise les données de clics pour les modifier les SERP sur des recherches particulières.
+
+Evolution des résultats de recherche
+-----------------------------------
+
+*10 blue links* était un terme utilisé pour décrire l'affichage de 10 résultats sur les SERPs lorsqu'ils n'étaient pas aussi développés qu'aujourd'hui.
+
+Tout a changé avec l'apparition de nouvelles *features* commes les publicités payantes, les snippets etc.
+
+Ces changements sont dûs à l'expérience utilisatrice qui a prouvé que certaines recherches sont mieux satisfaites si elles apparaissent dans d'autres formats de contenus. 
+
+**RECHERCHE LOCALISEE**
+
+Pour afficher les résultats d'une recherche locale (un restaurant pas loin par exemple), Google utiliser 3 facteurs:
+
+- Pertinence : si le business local recherché est en adéquation avec celui proposé
+- Distance : utilisation de la géo-localisation
+- Importance : Google cherche a récomposer les business connus dans le monde réel et s'appuie aussi sur les critiques
 
