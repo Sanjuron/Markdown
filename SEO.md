@@ -42,35 +42,35 @@ Les Principes SEO selon les grands moteurs de recherche:
 
 [Google webmaster guidelines](https://support.google.com/webmasters/answer/35769?hl=fr)
 
-Les principes de base :
+**Les principes de base** :
 
-- Construire des pages pour les utilisateurs, pas les moteurs de recherches
-- Ne pas tromper les utilisateurs
-- Eviter les astuces pour améliorer le ranking
-- Réfléchir à ce qui rend son site unique, de valeur.
+- **Construire des pages pour les utilisateurs**, pas les moteurs de recherches
+- **Ne pas tromper les utilisateurs**
+- **Eviter les astuces** pour améliorer le ranking
+- Réfléchir à ce qui rend **son site unique**, de valeur.
 
-Ce qu'il faut éviter:
+**Ce qu'il faut éviter** :
 
-- Du contenu généré automatiquement
-- Participer à des systèmes de liens [lien google pour mieux comprendre](https://support.google.com/webmasters/answer/66356?hl=fr)
-- Créer des pages avec peu ou pas de contenu original
-- Le *[cloaking](https://support.google.com/webmasters/answer/66355?hl=fr)* , c'est-à-dire montrer à l'utilisateur un contenu différent de celui que l'on présente au moteur de recherche
-- Les textes et liens cachés
-- Les Pages satellites [*Doorway pages*](https://support.google.com/webmasters/answer/2721311?hl=fr)
+- Du **contenu généré automatiquement**
+- Participer à des **systèmes de liens** [lien google pour mieux comprendre](https://support.google.com/webmasters/answer/66356?hl=fr)
+- Créer des pages avec **peu ou pas de contenu original**
+- Le *[cloaking](https://support.google.com/webmasters/answer/66355?hl=fr)* , c'est-à-dire montrer à l'utilisateur **un contenu différent de celui que l'on présente au moteur de recherche**
+- Les **textes et liens cachés**
+- Les **Pages satellites** [*Doorway pages*](https://support.google.com/webmasters/answer/2721311?hl=fr)
 
 
 **BING**
 
-Les principes de base :
+Les **principes de base** :
 
-- Produire du contenu clair, précis, facile à trouver, stimulant
-- Des titres clairs et pertinents
+- **Produire du contenu clai**r, précis, facile à trouver, stimulant
+- Des **titres clairs** et pertinents
 - Bing récompense les liens qui ont grandi organiquement (pas compris)
-- L'influence sociale
-- Vitesse de chargement des pages
-- Description des pages avec l'attribut alt
+- L**'influence sociale**
+- **Vitesse** de chargement des pages
+- Description des images avec l'**attribut alt**
 
-Ce qu'il faut éviter:
+**Ce qu'il faut éviter** :
 
 - Le contenu mince, les pages avec principalement de la pub, ou avec des liens qui redirigent vers des sites mal rankés.
 - Le système de liens (voir google, plus haut)
@@ -91,7 +91,44 @@ Les principes de base :
 
 Ce qu'il faut éviter:
 
-- Créer un listing Google my Business pour une entité non éligible.
-- Malreprésenter le champ d'activité de l'entreprise
-- Utiliser une boite aux lettres, un bureau virtuel plutôt qu'une vraie adresse postale.
-- S'attribuer de faux commentaires positifs, ou en attribuer des négatifs à ses compétiteurs. 
+- Créer un listing Google my Business pour une entité **non éligibl**e.
+- **Malreprésenter** le champ d'activité de l'entreprise
+- **Utiliser une boite aux lettres, un bureau virtuel** plutôt qu'une vraie adresse postale.
+- **S'attribuer de faux commentaires** positifs, ou en attribuer des négatifs à ses compétiteurs. 
+
+
+Contenter les intentions de l'utilisateur (*user intent*)
+------------------------------------------------------
+
+L'intention de l'utilisateur, c'est **ce qu'il s'attend à trouver lorsqu'il fait une recherche** une internet.
+
+Les** types communs d'*user intent*** :
+
+- **Informatif** : Chercher une information. Ex: "Où se trouve le Guatemala ?"
+- **Navigationnel** : Chercher un site précis. Ex: "Trivago"
+- **Transactionnel** : Chercher à acheter quelque chose. Ex: "Vacances au Guatemala pas cher"
+
+-> Entrer dans google des mots-clés permet de deviner les intentions de l'utilisateur vis-à-vis de ceux-ci et d'apprécier le SERP courant.
+
+-> Analyser le contenu produits par ses  compétiteurs pour ce qu'ils offrent et que vous non.
+
+Connaitre les buts du site
+--------------------------
+
+**KPI : Key Perfomance Indicators**. 
+
+Exemple de KPI courants :
+
+- Ventes
+- Téléchargements
+- Enregistrement d'emails
+- Soumissions de formulaires de contact.
+- Appels téléphoniques
+
+Et si le site fait partie du listing Google my Business:
+
+- Clicks-to-call
+- Clicks-to-website
+- Clicks-for-driving-directions
+
+Le trafic et le ranking doivent être envisagés comme un moyen, pas comme une fin. 
