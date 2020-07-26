@@ -248,3 +248,16 @@ Il est utilisé au sein de l'header http de l'URL et **offre plus de flexibilit�
 Le fonctionnement du Ranking
 ---------------------------
 
+Les moteurs de recherche **utilisent des algorithmes pour déterminer de la pertinence** du contenu indexé. 
+
+Si le SEO a beaucoup évolué par rapport à ce qu'il était auparavant, c'est parce que les algorithmes de recherche se sont perfectionnés et sont devenus plus difficiles à tromper. 
+
+Deux types de liens :
+
+- Backlink/indbound link : les liens d'autres sites qui pointent vers notre page
+- Interal link : liens présents sur des pages de notre site et qui renvoient à d'autres pages du site.
+
+Le **PageRank**, qui fait partie de l'algorithme google, analyse les liens et **estime l'importance d'une page en fonction de la qualité et de la quantité des liens** qui pointent vers elle.
+
+**Plus il y a de *backlinks*** venant de sites de confiance,** plus la page apparaitra haut** dans les résultats. 
+
