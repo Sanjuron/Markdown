@@ -78,3 +78,20 @@ Ce qu'il faut éviter:
 - Le contenu dupliqué
 - [L'accumulation de mots-clés](https://support.google.com/webmasters/answer/66358?hl=fr) : le *keyword-stuffing*
 - Le *cloaking*
+
+Lignes directrices pour représenter son business local sur Google
+-------------------------
+
+Pour faire partie du listing sur *Google my Business*, si l'on est une petite entreprise, il faut suivre certaines conventions. (peut s'appliquer au garage solidaire)
+
+Les principes de base : 
+
+- S'assurer d'être éligible au service; avoir une adresse physique ; produire des services en face-à-face
+- Représenter précisément tous les aspects de l'entreprise/magasin : nom, adresse, téléphone, site web...
+
+Ce qu'il faut éviter:
+
+- Créer un listing Google my Business pour une entité non éligible.
+- Malreprésenter le champ d'activité de l'entreprise
+- Utiliser une boite aux lettres, un bureau virtuel plutôt qu'une vraie adresse postale.
+- S'attribuer de faux commentaires positifs, ou en attribuer des négatifs à ses compétiteurs. 
