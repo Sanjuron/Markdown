@@ -179,7 +179,39 @@ Robots.txt
 
 Les fichiers **Robots.txt sont localisés dans le répertoire racine** des sites et **contiennent des indications sur quelles parties du site ne devraient pas être rendues accessibles aux crawlers**. 
 
-Quand Googlebot trouve un fichier Robots.txt, il suit les suggestions et commence à crawler le site.
+Quand Googlebot trouve un fichier Robots.txt, il suit les suggestions et commence à crawler le site. Il est utile de garder son contenu non-important dans le fichier Robots.txt pour optimiser la phase de crawling de son site.
 
 **Attention**, certaines personnes mal intentionnés **cherchent les robots.txt pour y trouver des informations sensibles. **Il est donc **déconseillé d'y placer ses pages de login et d'administration**.
+
+Comment faire pour que les crawlers puissent trouver le contenu le plus important. 
+-------------------------------------
+
+Si du contenu est protégé par connexion, alors le crawler ne peut pas y accéder. 
+
+Les robots ne peuvent pas non plus accéder aux formulaires de recherche.
+
+Le texte contenu dans des images, vidéos, gifs, n'est pas visible pour les crawlers. 
+
+Si une page n'est pas liée au reste du reste, alors elle est invisible. 
+
+Exemples d'erreurs de navigation typiques :
+
+- Avoir une navigation mobile et desktop qui produisent des résultats différents.
+- Les navigations où les *menu items* sont en JavaScript et pas en HTML.
+- Des navigations spécifiques à chaque utilisateur.
+
+Créer un [sitemap](https://support.google.com/webmasters/answer/183668?hl=fr) que l'on envoie ensuite à **GSC** est une bonne façon de s'assurer que Google trouve le contenu le plus important. 
+
+Une *sitemap* est une liste d'URLs présents sur le site qui sont** utilisables par les crawlers pour découvrir et indexer le contenu**.
+
+Un crawler peut rencontrer des erreurs lorsqu'il analyse le site. La partie Crawl Erros de la **GSC** peut fournir des indications sur l'erreur, ainsi que les fichiers de log du serveur.
+
+Il faut savoir distinguer les **erreurs 400 qui sont des erreurs clients**, ce qui veut dire un problème de syntaxe de l'URL où qu'elle ne pointe vers rien (404), et **les erreurs 500 qui sont des erreurs de serveurs**. 
+
+Le **code 301 de redirection** qui permet de suppléer à certaines de ces erreurs, en redirigeant d'une page non fonctionnelle à une qui l'est, **ne doit être utilisé que dans certains cas**. Exemple : il ne faut pas rediriger une ancienne URL vers une nouvelle qui ne *matche* pas avec le contenu de l'ancienne. 
+
+Comment se rendre indexable ?
+---------------------------
+
+
 
