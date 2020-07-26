@@ -146,12 +146,40 @@ Les moteurs de recherche ont **trois fonctions primaires** :
 - **Index** : Emmagasiner et organiser le contenu trouvé durant la phase de *crawl*
 - **Rank** : Fournir les bouts de contenus les plus aptes à répondre à la requête de l'utilisateur.
 
-Crawling
--------
+Crawling & Index
+---------------
 
 Le processus de découverte durant lequel **les moteurs de recherche envoient des robots** (*aka* *crawlers* ou *spiders*) **pour trouver du contenu nouveau et mise à jour**. Le contenu est découvert par le biais de liens. 
 
 Les *googlebots* commencent par chercher quelques pages puis **suivent les liens présents sur ces pages** pour trouver de nouvelles URLS.
 
 **Caffeine** est le nom de l'index qui contient toute la base de données des URL trouvées. 
+
+Pour que son contenu puisse être trouvé par ceux qui font des recherches, il faut donc **d'abord qu'il soit accessible aux *crawlers* et qu'il soit indexable**.
+
+Phase de crawling : rendre les pages visibles
+------------------------------------
+
+Pour savoir combien de pages de votre site sont indexés il suffit de taper la requête suivante dans google :
+
+    site:votresite.com
+
+Pour avoir des résultats plus précis, il faut de la [Google Search Console](https://support.google.com/webmasters/answer/9128668?hl=fr&visit_id=637313705286187566-1853452635&rd=1)
+
+Plusieurs raisons peuvent expliquer une absence de résultat à l'indexation:
+
+- Un site trop récent
+- Un site non lié à des sites externes
+- La navigation du site trop compliquée pour les *crawlers*
+- La présence de code qui bloque les moteurs de recherches : les *crawler directives*
+- Un site pénalisé par Google pour des tactiques de spam
+
+Robots.txt
+--------
+
+Les fichiers **Robots.txt sont localisés dans le répertoire racine** des sites et **contiennent des indications sur quelles parties du site ne devraient pas être rendues accessibles aux crawlers**. 
+
+Quand Googlebot trouve un fichier Robots.txt, il suit les suggestions et commence à crawler le site.
+
+**Attention**, certaines personnes mal intentionnés **cherchent les robots.txt pour y trouver des informations sensibles. **Il est donc **déconseillé d'y placer ses pages de login et d'administration**.
 
