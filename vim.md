@@ -14,7 +14,7 @@ Pour se déplacer:
 - **h** permet d'aller à **gauche**
 - **j** permet d'aller en **bas**
 - **k** permet d'aller en **haut**
-- **l** permet d'aller à **droite*
+- **l** permet d'aller à **droite**
 
 Il est possible d'utiliser des multiplicateurs. Ainsi **25j** fera descendre de 25 lignes.
 
@@ -34,7 +34,7 @@ Commandes de suppression:
 - **dd** permet de **supprimer une ligne**
 - **dw** permet de **supprimer un mot** (celui sur lequel se trouve le curseur)
 - **x** efface **une lettre**
-- Là encore, il est possible d'utiliser des multiplicateurs (5dd, 8x, etc.)
+- Là encore, il est possible d'**utiliser des multiplicateurs** (5dd, 8x, etc.)
 - **u** permet d'**annuler l'action précédente**
 
 Commandes de copie:
@@ -63,8 +63,3 @@ Autres commandes :
 - **:sp** pour **splitter horizontalement** et **:vsp** pour splitter **verticalement**
 - **:!**  pour lancer des **commandes externes** tout en restant dans vim. Exemple : :! ls pour voir le contenu du dossier dans lequel se trouve le fichier vim
 
-
-
-:sp splitte horizontalemet / :vsp splitte verticalement
-:! permet de lancer des commandes externes
- 
