@@ -51,7 +51,7 @@ Commandes de recherche:
 
 - **/** pour faire une **recherche de caractères** dans le texte
 - **:s** permet de **rechercher et remplacer**. *:s/mot-recherché/mot-remplace*. Attention, il faut se trouver sur la ligne en question
-- **%** pert de trouver les parenthèses, crochets, etc., **correspondants**
+- **%** permet de trouver les parenthèses, crochets, etc., **correspondants**
 
 Autres commandes :
 ----------------
