@@ -44,7 +44,7 @@ Commandes de copie:
 - **yiw** copie un **mot**
 - **p** pour **coller** le contenu copié
 - **r** pour **remplacer** un contenu
-- **ce** permet de **remplacer un mot à partique de l'endroit où le curser se trouve**
+- **ce** permet de **remplacer un mot à partir de l'endroit où le curser se trouve**
 
 Commandes de recherche:
 -------------------
