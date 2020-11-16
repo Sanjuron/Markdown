@@ -95,7 +95,7 @@ En langage de programmation, un **scaffold** est une structure qui fournit une f
 
 L'`appBar` et le `drawer` sont tous les deux disponibles en utilisant le widget `Scaffold`. 
 
-Attention : **Un constructor call ne peut pas avoir deux paramètres avec le même nom **(ex : Scaffold ne peut pas avoir deux child). Donc **comment faire si l'on veut mettre plusieurs enfants dans un widget** ? Réponse : on utilise le widget `Column` qui possède un paramètre `children`
+Attention : **Un constructor call ne peut pas avoir deux paramètres avec le même nom**(ex : Scaffold ne peut pas avoir deux child). Donc **comment faire si l'on veut mettre plusieurs enfants dans un widget** ? Réponse : on utilise le widget `Column` qui possède un paramètre `children`
 
 Fonctions
 -----
@@ -107,11 +107,11 @@ Stateless Widgets & Stateful Widgets
 
 L'état (*le state*) d'un système est la propriété du système susceptible de changer au cours du temps.
 
-Les **Stateless Widgets ne prennent pas en compte le changement **: ils servent à coder ce qui reste identique.
+Les **Stateless Widgets ne prennent pas en compte le changement**: ils servent à coder ce qui reste identique.
 
 À l'inverse, les **Stateful Widgets sont là pour traiter ce qui est susceptible de changer**.
 
-Un** Stateless Widget se construit lui-même** (il possède une méthode `build`), tandis qu'un **Stateful Widget crée un state** (`createState()`) et le state se construit lui-même.
+Un **Stateless Widget se construit lui-même** (il possède une méthode `build`), tandis qu'un **Stateful Widget crée un state** (`createState()`) et le state se construit lui-même.
 
 Toute classe qui étend (*extends*) un Stateless Widget doit posséder une méthode `build`.
 
@@ -124,7 +124,7 @@ Le widget `theme : ThemeData()` permet d'appliquer un style commun à l'ensemble
 
 Le `String tooltip` permet d'afficher un conseil lorsque l'utlisateur presse longuement une partie de l'app
 
-En Dart, les **annotations** débutent avec le signe @. Elles servent à** donner à Dart des informations sur une partie du programme**.
+En Dart, les **annotations** débutent avec le signe @. Elles servent à **donner à Dart des informations sur une partie du programme**.
 
 L'annotation `@override` sert à rappeler à Dart que **la classe qui est étendue possède une déclaration correspondante**.
 
